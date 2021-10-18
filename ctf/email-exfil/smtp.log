@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	smtp
+#open	2021-10-14-19-49-08
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	helo	mailfrom	rcptto	date	from	to	cc	reply_to	msg_id	in_reply_to	subject	x_originating_ip	first_received	second_received	last_reply	path	user_agent	tls	fuids	is_webmail
+#types	string	string	time	string	addr	port	addr	port	count	string	string	set[string]	string	string	set[string]	set[string]	string	string	string	string	addr	string	string	string	vector[addr]	string	bool	vector[string]	bool
+smtp	zeek	1579652703.807327	C15wgW2QKMjtaqETgc	127.0.0.1	33568	127.0.0.1	25	1	[192.168.57.3]	attacker@localhost	root@localhost	-	attacker@localhost	root@localhost	-	-	-	-	Check this out!	-	-	-	250 2.0.0 00M0P3Pn005268 Message accepted for delivery	127.0.0.1,127.0.0.1	-	F	FMQon64VpDVxwcICai,FoZyUmG8fOCzJ2x5k,F8HZx52ONBHmBE2fhc,FW9hBjyF2usOJNU45	F
+#close	2021-10-14-19-49-08

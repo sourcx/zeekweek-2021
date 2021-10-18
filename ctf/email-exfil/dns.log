@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2021-10-14-19-49-08
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
+#types	string	string	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
+dns	zeek	1579652694.157117	CmbWHM2aSCRb5icx18	127.0.0.1	41031	127.0.0.53	53	udp	59830	0.000139	www.passwordrandom.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	205.144.171.63	1444.000000	F
+dns	zeek	1579652694.157129	CmbWHM2aSCRb5icx18	127.0.0.1	41031	127.0.0.53	53	udp	35775	-	www.passwordrandom.com	1	C_INTERNET	28	AAAA	0	NOERROR	F	F	T	F	0	-	-	F
+#close	2021-10-14-19-49-08

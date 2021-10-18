@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2021-10-14-19-49-08
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	string	string	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+conn	zeek	1579652694.161006	CBrsGsk4Qd0NUN9t9	10.0.3.15	37806	205.144.171.63	443	tcp	ssl	0.329738	988	3453	SF	-	-	0	ShADadFf	15	1608	16	4097	-
+conn	zeek	1579652703.805599	C15wgW2QKMjtaqETgc	127.0.0.1	33568	127.0.0.1	25	tcp	smtp	0.015516	28060	601	SF	-	-	0	ShAdDafF	11	28640	12	1233	-
+conn	zeek	1579652694.157117	CmbWHM2aSCRb5icx18	127.0.0.1	41031	127.0.0.53	53	udp	dns	0.000203	102	118	SF	-	-	0	Dd	2	158	2	174	-
+conn	zeek	1579652670.586610	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	tcp	-	35.484421	376	3243	SF	-	-	0	ShADadfF	224	12036	187	12975	-
+#close	2021-10-14-19-49-08

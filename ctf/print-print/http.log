@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	http
+#open	2021-10-14-21-38-14
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types	cookie	server_cookie	server_date	client_lang	client_date	authorization	client_content_type	client_dnt
+#types	string	string	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	string	string	string	string	string	string	string	bool
+http	zeek	1577033770.943498	CH3CeW34hzWHO23ezd	127.0.0.1	49306	127.0.0.1	1234	1	POST	localhost	/PDF	-	-	CUPS/2.2.7 (Linux 4.15.0-65-generic; x86_64) IPP/2.0	-	12120	0	-	-	-	-	(empty)	-	-	-	FP8v4L3I44wfyzABWh	-	-	-	-	-	-	-	-	-	Sun, 22 Dec 2019 16:56:10 GMT	-	application/ipp	-
+#close	2021-10-14-21-38-14

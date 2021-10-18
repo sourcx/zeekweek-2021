@@ -1,0 +1,19 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2021-10-14-19-31-01
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	string	string	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+conn	zeek	1627964204.349402	C36fHq4JtaE9SMyKOb	192.168.38.105	53660	192.168.38.31	22	tcp	ssh	11.471520	1737	1849	RSTO	-	-	0	ShADadFR	17	2617	17	2741	-
+conn	zeek	1627964237.818124	CR8Yv24Pte2Vwav4Qg	192.168.38.105	53730	192.168.38.31	22	tcp	ssh	1.698228	1569	1742	SF	-	-	0	ShADadFf	12	2201	13	2426	-
+conn	zeek	1627964240.766666	CDKxH241WgaulMaCRa	192.168.38.105	53732	192.168.38.31	22	tcp	ssh	1.394557	1569	1742	SF	-	-	0	ShADadFf	12	2201	13	2426	-
+conn	zeek	1627964257.402328	CqYn8K3gczbOPRoL42	192.168.38.105	53734	192.168.38.31	22	tcp	ssh	2.362124	1569	1744	SF	-	-	0	ShADadFf	12	2201	13	2428	-
+conn	zeek	1627964276.424488	CJ9KGO1sPaqa9STDtj	192.168.38.105	53736	192.168.38.31	22	tcp	ssh	3.791625	1569	1744	SF	-	-	0	ShADadFf	12	2201	13	2428	-
+conn	zeek	1627964307.535588	C0gHnl36lxbx2EP6Wk	192.168.38.105	53774	192.168.38.31	22	tcp	ssh	2.812875	1569	1744	SF	-	-	0	ShADadFf	12	2201	13	2428	-
+conn	zeek	1627964329.091674	C8EDfp3MjyI4Pd7mFa	192.168.38.105	53776	192.168.38.31	22	tcp	ssh	1.999265	1569	1745	SF	-	-	0	ShADadFf	12	2201	13	2429	-
+conn	zeek	1627964343.609177	CtvYny1iAFhGLWn4c9	192.168.38.105	53806	192.168.38.31	22	tcp	ssh	1.889219	1569	1742	SF	-	-	0	ShADadFf	12	2201	13	2426	-
+conn	zeek	1627964362.282132	CixeZE1ShOJqYEpU84	192.168.38.105	53818	192.168.38.31	22	tcp	ssh	11.537941	1569	1744	SF	-	-	0	ShADadFf	12	2201	13	2428	-
+conn	zeek	1627964217.768462	CfKXT03gb84xlctdt	192.168.38.1	50482	192.168.38.31	22	tcp	-	185.123161	8532	40604	OTH	-	-	0	DdAa	564	37860	385	60624	-
+#close	2021-10-14-19-31-01

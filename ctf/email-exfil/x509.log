@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	x509
+#open	2021-10-14-19-49-08
+#fields	_stream	_target	ts	fingerprint	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len	host_cert	client_cert
+#types	string	string	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count	bool	bool
+x509	zeek	1579652694.283834	ea8ae8062b41c716ccd7572d6a4f5e7986850037e829e7c9964ad4e856db79e2	3	0494DED8FD0A8EE03754BF2CDFD1652B4DCC	CN=passwordrandom.com	CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US	1578862779.000000	1586635179.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	passwordrandom.com,www.passwordrandom.com	-	-	-	F	-	T	F
+x509	zeek	1579652694.283834	25847d668eb4f04fdd40b12b6b0740c567da7d024308eb6c2c96fe41d9de218d	3	0A0141420000015385736A0B85ECA708	CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US	CN=DST Root CA X3,O=Digital Signature Trust Co.	1458229246.000000	1615995646.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0	F	F
+#close	2021-10-14-19-49-08

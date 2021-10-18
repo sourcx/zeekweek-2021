@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	reporter
+#open	2021-10-14-19-47-59
+#fields	_stream	_target	ts	level	message	location
+#types	string	string	time	enum	string	string
+reporter	zeek	1579652693.432306	Reporter::WARNING	Your trace file likely has invalid TCP checksums, most likely from NIC checksum offloading.  By default, packets with invalid checksums are discarded by Zeek unless using the -C command-line option or toggling the 'ignore_checksums' variable.  Alternatively, disable checksum offloading by the network adapter to ensure Zeek analyzes the actual checksums that are transmitted.	/usr/local/Cellar/zeek/4.1.0/share/zeek/base/misc/find-checksum-offloading.zeek, line 54
+#close	2021-10-14-19-47-59

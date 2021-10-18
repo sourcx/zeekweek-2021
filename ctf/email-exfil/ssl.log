@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	ssl
+#open	2021-10-14-19-49-08
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	cipher	curve	server_name	resumed	last_alert	next_protocol	established	ssl_history	cert_chain_fps	client_cert_chain_fps	sni_matches_cert	ja3	ja3_client	ja3s	ja3s_version	ja3s_cipher	ja3s_extensions
+#types	string	string	time	string	addr	port	addr	port	string	string	string	string	bool	string	string	bool	string	vector[string]	vector[string]	bool	string	string	string	string	string	string
+ssl	zeek	1579652694.225564	CBrsGsk4Qd0NUN9t9	10.0.3.15	37806	205.144.171.63	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384	secp384r1	www.passwordrandom.com	F	-	h2	T	CsxknGIi	ea8ae8062b41c716ccd7572d6a4f5e7986850037e829e7c9964ad4e856db79e2,25847d668eb4f04fdd40b12b6b0740c567da7d024308eb6c2c96fe41d9de218d	(empty)	T	456523fc94726331a4d5a2e1d40b2cd7	-	2fe9b0e731d3d41b2b84e8e1d6186836	771	49200	16-23-65281-0
+#close	2021-10-14-19-49-08

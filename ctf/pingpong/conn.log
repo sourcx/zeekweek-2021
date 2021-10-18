@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2021-10-14-19-35-10
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	string	string	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+conn	zeek	1627846935.367115	ChDTBA253H7Ad9dfJf	192.168.1.5	8	1.6.1.1	0	icmp	-	0.203009	37	0	OTH	-	-	0	-	5	177	0	0	-
+conn	zeek	1627846935.367217	CfJDbM3iJyBy47W9W7	192.168.1.5	0	1.6.1.1	8	icmp	-	0.250866	74	0	OTH	-	-	0	-	10	354	0	0	-
+#close	2021-10-14-19-35-10

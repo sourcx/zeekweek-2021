@@ -1,0 +1,10 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2021-10-14-20-58-46
+#fields	_stream	_target	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	string	string	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+conn	zeek	1628004594.596239	Cs5SVB1XF6XyylsQic	192.168.1.116	56743	8.8.8.8	53	udp	dns	0.035655	65	129	SF	-	-	0	Dd	1	93	1	157	-
+#close	2021-10-14-20-58-46

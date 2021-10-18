@@ -1,0 +1,595 @@
+---------------------------------------------
+function name: 'RADIUS::lambda_<10277631603221909944>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<10277631603221909944>\x0a{ \x0areturn (fmt(unknown-%d, RADIUS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'NTP::lambda_<5807870554069934242>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5807870554069934242>\x0a{ \x0areturn (fmt(unknown-%d, NTP::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB::lambda_<5805547694507647655>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5805547694507647655>\x0a{ \x0areturn (fmt(unknown-wksta-command-%d, SMB::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'KRB::lambda_<10828663398899005892>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<10828663398899005892>\x0a{ \x0areturn (fmt(unknown-%d, KRB::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'MQTT::lambda_<7840006041596346904>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<7840006041596346904>\x0a{ \x0areturn (fmt(unknown-return-code-%d, MQTT::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DNS::lambda_<17124666771297361458>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<17124666771297361458>\x0a{ \x0areturn (fmt(rcode-%d, DNS::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<12161913282366444095>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<12161913282366444095>\x0a{ \x0areturn (fmt(keyboard-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<10346893438950541782>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<10346893438950541782>\x0a{ \x0areturn (fmt(unknown-%d, PE::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB::lambda_<12698886459612186196>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<12698886459612186196>\x0a{ \x0areturn ((coerce table() to table[count] of string));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DNS::lambda_<11467224718829909203>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<11467224718829909203>\x0a{ \x0areturn (fmt(digest-%d, DNS::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DCE_RPC::lambda_<3438089150521540209>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<3438089150521540209>\x0a{ \x0areturn (fmt(unknown-%s, DCE_RPC::uuid));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'MQTT::lambda_<17805710031051598643>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<17805710031051598643>\x0a{ \x0areturn (fmt(unknown-version-%d, MQTT::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RADIUS::lambda_<10003522103757330002>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<10003522103757330002>\x0a{ \x0areturn (fmt(unknown-%d, RADIUS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RADIUS::lambda_<15827753998959189630>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<15827753998959189630>\x0a{ \x0areturn (fmt(unknown-%d, RADIUS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<13589548049906899970>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13589548049906899970>\x0a{ \x0aif (!SumStats::rv?$unique_vals) \x0a\x09SumStats::rv$unique_vals = (coerce set() to set[record { num:count &optional; dbl:double &optional; str:string &optional; }]);\x0a\x0aif (SumStats::r?$unique_max) \x0a\x09SumStats::rv$unique_max = SumStats::r$unique_max;\x0a\x0aif (!SumStats::r?$unique_max || sizeofSumStats::rv$unique_vals <= SumStats::r$unique_max) \x0a\x09add SumStats::rv$unique_vals[SumStats::obs];\x0a\x0aSumStats::rv$unique = sizeofSumStats::rv$unique_vals;\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<5249533924397743930>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5249533924397743930>\x0a{ \x0aSumStats::calc_std_dev(SumStats::rv);\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB::lambda_<16500790476566078675>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<16500790476566078675>\x0a{ \x0aSMB::unknown = fmt(unknown-%d, SMB::i);\x0areturn ([$id=SMB::unknown, $desc=SMB::unknown]);\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'Syslog::lambda_<10091017750462042870>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<10091017750462042870>\x0a{ \x0areturn (fmt(?-%d, Syslog::c));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'NetControl::lambda_<13025377167253060704>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13025377167253060704>\x0a{ \x0a<init> NetControl::rid, NetControl::command;\x0a{ \x0a;\x0a;\x0aNetControl::rid, NetControl::command = NetControl::idx;\x0aNetControl::p = NetControl::t[NetControl::rid, NetControl::command]$p;\x0aNetControl::r = NetControl::t[NetControl::rid, NetControl::command]$r;\x0aevent NetControl::rule_error(NetControl::r, NetControl::p, Timeout during rule insertion/removal);\x0areturn (0 secs);\x0a}\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB1::lambda_<13955645719991080936>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13955645719991080936>\x0a{ \x0areturn (fmt(unknown-trans2-sub-cmd-%d, SMB1::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB::lambda_<1708146459420896521>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<1708146459420896521>\x0a{ \x0areturn (fmt(unknown-uuid-%s, SMB::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<218976344820565723>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<218976344820565723>\x0a{ \x0areturn (fmt(failure_code-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'Files::lambda_<2682804121089285009>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<2682804121089285009>\x0a{ \x0areturn ();\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB2::lambda_<18061486284585323825>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<18061486284585323825>\x0a{ \x0areturn (fmt(unknown-%d, SMB2::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB1::lambda_<2892084647181738601>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<2892084647181738601>\x0a{ \x0areturn (fmt(unknown-%d, SMB1::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<10614720616619951585>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<10614720616619951585>\x0a{ \x0aif (SSL::i / 255 == 127) \x0a\x09return (fmt(TLSv13-draft%d, SSL::i % 127));\x0a\x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<7622895434334061766>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<7622895434334061766>\x0a{ \x0areturn (fmt(result-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DNP3::lambda_<3579053663042255713>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<3579053663042255713>\x0a{ \x0areturn (fmt(unknown-%d, DNP3::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'Log::lambda_<17906632062206127958>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<17906632062206127958>\x0a;]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SOCKS::lambda_<14136014249319165879>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<14136014249319165879>\x0a{ \x0areturn (fmt(unknown-%d, SOCKS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<5264444978384256784>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5264444978384256784>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<14671425650432161651>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<14671425650432161651>\x0a{ \x0areturn (fmt(unknown-%d, PE::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DCE_RPC::lambda_<9610115632052462667>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<9610115632052462667>\x0a{ \x0areturn (fmt(unknown-%d, DCE_RPC::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'Syslog::lambda_<4536001552594214694>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<4536001552594214694>\x0a{ \x0areturn (fmt(?-%d, Syslog::c));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<5142204310076941986>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5142204310076941986>\x0a{ \x0areturn (fmt(unknown-%d, PE::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<7502519039252044860>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<7502519039252044860>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<16732805555981865747>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<16732805555981865747>\x0a{ \x0atopk_add(SumStats::rv$topk, to_any_coerceSumStats::obs);\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'Modbus::lambda_<4213558734401003350>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<4213558734401003350>\x0a{ \x0areturn (fmt(unknown-%d, Modbus::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'NetControl::lambda_<15391860716887676992>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<15391860716887676992>\x0a{ \x0areturn (NetControl::p2$_priority - NetControl::p1$_priority);\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<781058953019437360>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<781058953019437360>\x0a{ \x0areturn (fmt(client_build-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DNS::lambda_<16808347970126616926>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<16808347970126616926>\x0a{ \x0areturn (fmt(algorithm-%d, DNS::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'MQTT::lambda_<1007623050728186098>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<1007623050728186098>\x0a{ \x0areturn (fmt(unknown-qos-level-%d, MQTT::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<1203034014529412222>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<1203034014529412222>\x0a{ \x0areturn (fmt(unknown-%d.%d, PE::i, PE::j));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'Modbus::lambda_<4781646355674294921>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<4781646355674294921>\x0a{ \x0areturn (fmt(unknown-%d, Modbus::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<2772442482009041426>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<2772442482009041426>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<13016355419394617159>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13016355419394617159>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<6685610682448974385>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<6685610682448974385>\x0a{ \x0areturn (fmt(unknown-%d, PE::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB::lambda_<13683643955041363206>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13683643955041363206>\x0a{ \x0areturn (fmt(unknown-srv-command-%d, SMB::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<16971346277209268296>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<16971346277209268296>\x0a{ \x0areturn (fmt(high_color_depth-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DHCP::lambda_<6628390592579448247>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<6628390592579448247>\x0a{ \x0areturn (fmt(unknown-message-type-%d, DHCP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<15751947574156184365>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<15751947574156184365>\x0a{ \x0areturn (fmt(unknown-%s, PE::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<5876432092005160877>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5876432092005160877>\x0a{ \x0aif (0 < SumStats::r$num_last_elements) \x0a\x09{ \x0a\x09if (!SumStats::rv?$last_elements) \x0a\x09\x09SumStats::rv$last_elements = Queue::init((coerce [$max_len=SumStats::r$num_last_elements] to record { max_len:count &optional; }));\x0a\x0a\x09Queue::put(SumStats::rv$last_elements, to_any_coerceSumStats::obs);\x0a\x09}\x0a\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RADIUS::lambda_<2252692164966089768>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<2252692164966089768>\x0a{ \x0areturn (fmt(unknown-%d, RADIUS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<8837844830878964307>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<8837844830878964307>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<16768062891662575553>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<16768062891662575553>\x0a{ \x0areturn (fmt(color_depth-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DHCP::lambda_<15480589347655300945>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<15480589347655300945>\x0a{ \x0areturn (fmt(unknown-option-type-%d, DHCP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'KRB::lambda_<989400447451121790>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<989400447451121790>\x0a{ \x0areturn (fmt(unknown-%d, KRB::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RADIUS::lambda_<3726530293051658132>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<3726530293051658132>\x0a{ \x0areturn (fmt(unknown-%d, RADIUS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<13469130616171717937>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13469130616171717937>\x0a{ \x0aif (1 < SumStats::rv$num) \x0a\x09SumStats::rv$var_s += ((SumStats::val - SumStats::rv$prev_avg) * (SumStats::val - SumStats::rv$average));\x0a\x0aSumStats::calc_variance(SumStats::rv);\x0aSumStats::rv$prev_avg = SumStats::rv$average;\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'MySQL::lambda_<2243193287390706197>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<2243193287390706197>\x0a{ \x0areturn (fmt(unknown-%d, MySQL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<13848445841710539789>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13848445841710539789>\x0a{ \x0areturn (fmt(encryption_method-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<15999170784364404379>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<15999170784364404379>\x0a{ \x0areturn (fmt(encryption_level-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SOCKS::lambda_<6923602187783662890>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<6923602187783662890>\x0a{ \x0areturn (fmt(unknown-%d, SOCKS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'Software::lambda_<15223877882574403773>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<15223877882574403773>\x0a{ \x0areturn (Software::a);\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<8114455758478144698>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<8114455758478144698>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<7642743998483140037>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<7642743998483140037>\x0a{ \x0areturn (fmt(unknown-%d, PE::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<17878814698543015905>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<17878814698543015905>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SOCKS::lambda_<3786080911633949747>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<3786080911633949747>\x0a{ \x0areturn (fmt(unknown-%d, SOCKS::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<17303144080356051766>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<17303144080356051766>\x0a{ \x0areturn (fmt(cert_type-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'PE::lambda_<3796205367606939782>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<3796205367606939782>\x0a{ \x0areturn (fmt(unknown-%d, PE::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<9000702131385290308>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<9000702131385290308>\x0a{ \x0aif (!SumStats::rv?$card) \x0a\x09{ \x0a\x09SumStats::rv$card = hll_cardinality_init(SumStats::r$hll_error_margin, SumStats::r$hll_confidence);\x0a\x09SumStats::rv$hll_error_margin = SumStats::r$hll_error_margin;\x0a\x09SumStats::rv$hll_confidence = SumStats::r$hll_confidence;\x0a\x09}\x0a\x0ahll_cardinality_add(SumStats::rv$card, to_any_coerceSumStats::obs);\x0aSumStats::rv$hll_unique = double_to_count(hll_cardinality_estimate(SumStats::rv$card));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<16728206859402945030>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<16728206859402945030>\x0a{ \x0aif (!SumStats::rv?$average) \x0a\x09SumStats::rv$average = SumStats::val;\x0aelse\x0a\x09SumStats::rv$average += (SumStats::val - SumStats::rv$average) / (coerce SumStats::rv$num to double);\x0a\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<12824049052455053929>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<12824049052455053929>\x0a{ \x0aif (!SumStats::rv?$max) \x0a\x09SumStats::rv$max = SumStats::val;\x0aelse\x0a\x09if (SumStats::rv$max < SumStats::val) \x0a\x09\x09SumStats::rv$max = SumStats::val;\x0a\x0a\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SSL::lambda_<12901449870665157513>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<12901449870665157513>\x0a{ \x0areturn (fmt(unknown-%d, SSL::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DNS::lambda_<5683085932452683878>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5683085932452683878>\x0a{ \x0areturn (fmt(qclass-%d, DNS::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB::lambda_<3726805458712745502>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<3726805458712745502>\x0a{ \x0areturn (fmt(unknown-uuid-%s, SMB::j));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'RDP::lambda_<13921543296624284693>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<13921543296624284693>\x0a{ \x0areturn (fmt(security_protocol-%d, RDP::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<9281275556047151871>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<9281275556047151871>\x0a{ \x0aif (!SumStats::rv?$min) \x0a\x09SumStats::rv$min = SumStats::val;\x0aelse\x0a\x09if (SumStats::val < SumStats::rv$min) \x0a\x09\x09SumStats::rv$min = SumStats::val;\x0a\x0a\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<2776582902611485537>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<2776582902611485537>\x0a{ \x0aSumStats::sample_add_sample(SumStats::obs, SumStats::rv);\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'DNS::lambda_<16879306308187337103>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<16879306308187337103>\x0a{ \x0areturn (fmt(query-%d, DNS::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SumStats::lambda_<5054679338066706208>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<5054679338066706208>\x0a{ \x0aSumStats::rv$sum += SumStats::val;\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'MQTT::lambda_<15361511498945005956>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<15361511498945005956>\x0a{ \x0areturn (fmt(unknown-msg-type-%d, MQTT::n));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB1::lambda_<4089359422881458927>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<4089359422881458927>\x0a{ \x0areturn (fmt(unknown-trans-sub-cmd-%d, SMB1::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB2::lambda_<6563323924483891119>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<6563323924483891119>\x0a{ \x0areturn (fmt(unknown-%d, SMB2::i));\x0a}]
+-----------
+---------------------------------------------
+
+
+---------------------------------------------
+function name: 'SMB2::lambda_<18274948480393582451>'
+[type_name=func, exported=F, constant=T, enum_constant=F, option_value=F, redefinable=F, broker_backend=F, value=lambda_<18274948480393582451>\x0a{ \x0areturn (fmt(unknown-%d, SMB2::i));\x0a}]
+-----------
+---------------------------------------------
+
+
